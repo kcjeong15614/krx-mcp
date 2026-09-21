@@ -13,8 +13,9 @@ KRX Open API MCP 서버 (원격/모바일용 HTTP 버전)
 import os
 from fastmcp import FastMCP
 from fastmcp.server.auth.providers.jwt import StaticTokenVerifier
-from krx_openapi import KRX, catalog
-from krx_openapi.exceptions import (
+from krx_openapi import (
+    KRX,
+    catalog,
     KRXError,
     KRXConfigError,
     KRXAuthError,
