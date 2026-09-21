@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: krx-mcp-server
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python krx_mcp_server.py"
+    envVars:
+      - key: KRX_API_KEY
+        sync: false
+      - key: MCP_AUTH_TOKEN
+        sync: false
